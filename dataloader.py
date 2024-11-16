@@ -119,8 +119,8 @@ class ETL:
             sum = valores.sum()
             self.logger.debug('Cálculo realizado')
             return sum
-        except KeyError as e:
-            self.logger.info(f"Se presentó un error, verrificar que los índices y la columna existan.")
+        except:
+            self.logger.info(f"Se presentó un error, verificar que los índices y la columna existan.")
             return None
 
 

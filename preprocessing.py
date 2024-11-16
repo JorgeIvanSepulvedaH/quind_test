@@ -18,6 +18,7 @@ df_rental = dfs[df_names.index('rental')]
 df_film = etl.drop_column(df_film, ' original_language_id')
 # Clean df
 dfilm_clean = etl.numeric_var_clean(df_film, list_film)
+df_film.to_excel('df_film_processed.xlsx', index=False)
 dfinventory_clean = etl.numeric_var_clean(df_inventory, list_inventory)
 
 # Merge dfs
